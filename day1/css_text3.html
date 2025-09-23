@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글꼴 관련 스타일</title>
+    <style>
+        div{
+            width: 700px;
+            border: 1px solid #000; /* 테두리선 */
+            padding: 5px;  /*안쪽 여백*/
+        }
+        p{
+            /* 줄간격 2 - 글자 크기의 100% 간격 유지 */
+            line-height: 2;
+
+            /* 문단 정렬 */
+            /*text-align: left; /* 기본 */
+            /* text-align: center; /* 가운데 정렬 */
+            /* text-align: right; /* 오른쪽 정렬 */
+            text-align: justify; /* 양쪽 정렬 */
+        }
+    </style>
+</head>
+<body>
+    <!-- div태그: html의 요소를 구분하거나, 레이아웃의 틀을 구분 -->
+    <div>
+        <h2>마늘(Garlic)</h2>
+        <p>일해백리(一害百利)는 마늘의 별명이다. 한가지 해가 있고 백가지 이로움이 
+            있다는 뜻이다. 그 한가지 해란 아린 맛으로 위에 부담을 준다는 것이다.
+        </p>
+        <!-- 인라인 스타일: style="color:red; font-style:italic" -->
+        <p>마늘 특유의 아린 맛은 <span style="color:red; font-style:italic;">알리신</span>이라는 성분 때문으로 살균 및 항균 작용을 하며
+        마늘에 들어있는 아연이 피로 회복에 도움을 준다.
+        </p>
+    </div>
+</body>
+</html>

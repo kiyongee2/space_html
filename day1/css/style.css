@@ -1,0 +1,16 @@
+h1{
+    color: green; 
+}
+h2{
+    font-family: "궁서";
+    color: #0000ff;  /* 16진수 표기 */
+}
+/* 텍스트에 줄을 표시하거나 없애는 기능 */
+a{
+    text-decoration: none;
+}
+/* hover는 마우스 올렸을때 동작을 설정할 수 있음 */
+a:hover{
+    color: #000000;
+    text-decoration: underline;
+}
