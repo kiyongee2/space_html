@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>바깥 여백 - margin</title>
+    <style>
+        /* margin은 수직 일때 큰 마진값으로 합쳐짐 - 마진 중첩 */
+        div{
+            width: 200px;
+            height: 100px;
+            margin: 20px 20px 30px 20px; /* top right bottom left */
+            display: block; /* 수직 배치(기본-default) */
+        }
+        #box1{
+            background-color: #ff0000;
+        }
+        #box2{
+            background-color: #00ff00;
+        }
+        #box3{
+            background-color: #0000ff;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3"></div>
+</body>
+</html>

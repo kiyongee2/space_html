@@ -1,0 +1,32 @@
+/* 상단 메뉴 스타일 */
+body{
+    margin: 0; /* body의 기본 margin 제거*/
+}
+nav ul{
+    list-style: none;
+    margin: 0;  /* ul의 기본 margin 제거 */
+    padding: 0;
+    text-align: center; /* 가운데 정렬 */
+}
+nav ul li{
+    display: inline-block; /* 가로로 나열 */
+    margin: 16px;
+    border-top: 3px solid #222;
+    padding: 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+}
+nav ul li:hover{
+    /* 마우스 오버시 변경 */
+    background-color: #eee;
+    border-top: 3px solid #ff0000;
+}
+
+/* section 스타일 */
+section{margin: 20px;}
+section h1{
+    border-bottom: 3px solid #222;
+    padding: 20px;
+}
