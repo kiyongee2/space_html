@@ -1,0 +1,32 @@
+/* layout.css */
+
+#container{
+    width: 1000px;
+    margin: 0 auto;
+}
+h1{color: #0000ff}
+header{
+    width: 996px; /*테두리(4px) 제외 */
+    height: 100px;
+    border: 2px solid #ccc;
+}
+section{
+    width: 660px;
+    height: 600px;
+    border: 2px solid #ccc;
+    background-color: aliceblue;
+    float: left;
+}
+aside{
+    width: 320px;
+    height: 600px;
+    border: 2px solid #ccc;
+    background-color: aquamarine;
+    float: right;
+}
+footer{
+    width: 996px;
+    height: 100px;
+    border: 2px solid #ccc;
+    clear: both;
+}

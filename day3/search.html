@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>검색 폼 만들기</title>
+</head>
+<body>
+    <!-- action: 서버 페이지, url
+         method(전송 방식) - get(주소표시줄에 표시), post(주소표시줄에 보이지 않음) -->
+    <!-- input - text: 한줄 글상자, name: 서버가 처리하는 속성 
+                 submit: 폼의 내용을 서버에 전송, 
+                 value: 화면에 표시해줄 값-->
+    <form action="search.jsp" method="get">
+        <input type="text" name="keyword">
+        <input type="submit" value="검색">
+    </form>
+</body>
+</html>

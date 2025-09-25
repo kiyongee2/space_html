@@ -1,0 +1,29 @@
+/* login.css */
+h2{
+    margin: 20px;
+    color: #336699;
+}
+form{
+    width: 350px;
+    border: 1px solid #ccc;
+    margin: 20px;
+}
+form ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    margin: 20px;
+}
+label{
+    width: 80px; /* label에 크기 속성 */
+    /* display: inline-block; */
+    float: left;
+}
+button{
+    margin-left: 100px;
+    padding: 5px 15px;
+    border: none;
+    cursor: pointer;
+}
