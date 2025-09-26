@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상 선택자 - :(콜론)을 붙인 속성</title>
+    <style>
+        form{width: 500px;}
+        input:disabled{
+            background-color: #ddd;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend>사용자 정보</legend>
+            <label for="uname">이름</label>
+            <input type="text" name="uname" disabled>
+        </fieldset>
+
+    </form>
+</body>
+</html>

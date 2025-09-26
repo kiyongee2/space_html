@@ -1,0 +1,30 @@
+/* style.css */
+/* 모바일 기준 - @media 생략 */
+*{margin: 0; padding: 0;}
+#container{
+    width: 100%; /* 가변 길이 */
+    background-color: #ff0000;
+}
+header{height: 100px; color: #fff; padding: 10px;}
+section{height: 500px; color: #fff; padding: 10px;}
+footer{height: 100px; color: #fff; padding: 10px;}
+
+/* 태블릿 기준 - 780px 이상의 해상도 */
+@media screen and (min-width: 780px) {
+    #container{
+        width: 780px;
+        margin: 0 auto;
+        background-color: #00ff00;
+    }
+    h1{color: blue;}
+}
+
+/* PC 기준 - 1024px 이상 */
+@media screen and (min-width: 1024px) {
+    #container{
+        width: 1024px;
+        margin: 0 auto;
+        background-color: #ccc;
+    }
+    h1{color: black;}
+}
