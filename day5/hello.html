@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>출력하기</title>
+    <style>
+        span{
+            color: #f00;
+            font-size: 2em; /* em-16px */
+        }
+    </style>
+</head>
+<body>
+    <h2>자바스크립트 입, 출력</h2>
+    <div id="demo"></div>
+    <div class="result"></div>
+
+    <script>
+        // 문자 출력 - textContent, innerText 속성 사용
+        let demo = document.getElementById("demo");
+        //demo.textContent = "Hello~ Javascript!";
+        demo.innerText = "Hello~ Javascript";
+        demo.style.fontSize = "30px";
+        demo.style.color = "#00f";
+
+        // 태그에 속성 적용 - innerHTML
+        let result = document.querySelector(".result");
+        result.innerHTML = "안녕~ <span>자바스크립트</span>";
+    </script>
+</body>
+</html>

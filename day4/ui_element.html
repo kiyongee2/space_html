@@ -10,6 +10,10 @@
             background-color: #ddd;
             border: 1px solid #ccc;
         }
+        /* 라디오 버튼이 체크됐을때 인접 태그에 스타일 적용 */
+        input:checked + span{
+            color: blue;
+        }
     </style>
 </head>
 <body>
@@ -19,7 +23,22 @@
             <label for="uname">이름</label>
             <input type="text" name="uname" disabled>
         </fieldset>
-
+        <fieldset>
+            <legend>신청 과목</legend>
+            <p>이 달에 신청할 과목을 선택하세요</p>
+            <label for="subject">
+                <!-- label- 텍스트를 선택해도 선택되도록 하는 역할: 작은 기기에 유리 -->
+                <label>
+                    <input type="radio" name="subject" value="speaking"><span>회화</span>
+                </label>
+                <label>
+                    <input type="radio" name="subject" value="grammer"><span>문법</span>
+                </label>
+                <label>
+                    <input type="radio" name="subject" value="writing"><span>작문</span>
+                </label>
+            </label>
+        </fieldset>
     </form>
 </body>
 </html>
