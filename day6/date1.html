@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>날짜/시간 표시하기</h2>
+    <h4 id="demo"></h4>
+
+    <script>
+        let demo = document.querySelector("#demo"); //출력 객체 접근
+        const now = new Date(); //날짜 인스턴스 생성
+
+        //연, 월, 일
+        demo.innerHTML = `현재 연도: ${now.getFullYear()}<br>`;
+        demo.innerHTML += `현재 월: ${now.getMonth() + 1}<br>`;
+        demo.innerHTML += `현재 일: ${now.getDate()}<br>`;
+        demo.innerHTML += `현재 날짜: ${now.toLocaleDateString()}<br>`;
+
+        //시, 분, 초
+        demo.innerHTML += `현재 시: ${now.getHours()}<br>`;
+        demo.innerHTML += `현재 분: ${now.getMinutes()}<br>`;
+        demo.innerHTML += `현재 초: ${now.getSeconds()}<br>`;
+        demo.innerHTML += `현재 시간: ${now.toLocaleTimeString()}<br>`;
+
+        //요일
+        //요일 배열 생성
+        let day = ["일요일", "월요일", "화요일", "수요일", "목요일", "금요일", "토요일"];
+        demo.innerHTML += `현재 요일: ${day[now.getDay()]}<br>`; //2, 화요일
+
+        //시간 측정
+        demo.innerHTML += `현재까지 시간: ${now.getTime()/1000}초<br>`;
+    </script>
+</body>
+</html>
